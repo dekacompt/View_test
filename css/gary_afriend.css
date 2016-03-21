@@ -3050,14 +3050,14 @@ footer {
   /* line 2770, ../sass/gary_afriend.scss */
   .lightbox .profile form .field {
 	display:inline;
-    width: 150px;
+    width: 220px;
     height: 25px;
     padding-left: 15px;
     margin: 10px 5px 0 5px;
   }
   /* line 2776, ../sass/gary_afriend.scss */
   .lightbox .profile form span {
-    display: inline-block;
+    display: inline;
     width: 50px;
     height: 20px;
   }
