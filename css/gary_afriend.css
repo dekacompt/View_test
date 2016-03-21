@@ -1,0 +1,3224 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+/* line 10, ../sass/gary_afriend.scss */
+img, object, embed, video {
+  max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+/* line 15, ../sass/gary_afriend.scss */
+.ie6 img {
+  width: 100%;
+}
+
+/* line 19, ../sass/gary_afriend.scss */
+body {
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  background-color: #eeeeee;
+}
+
+/* line 23, ../sass/gary_afriend.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 26, ../sass/gary_afriend.scss */
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 5px;
+  color: white;
+  font-size: 14px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  z-index: 99999;
+}
+
+/* line 36, ../sass/gary_afriend.scss */
+.nav_mob {
+  display: none;
+}
+
+/* line 39, ../sass/gary_afriend.scss */
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 3px;
+}
+/* line 46, ../sass/gary_afriend.scss */
+.nav .logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-top: 5px;
+  background: url(../img/logo.png) center no-repeat;
+}
+/* line 55, ../sass/gary_afriend.scss */
+.nav ul {
+  display: inline-block;
+  float: right;
+  vertical-align: baseline;
+  margin-top: 9px;
+  margin-right: 15px;
+}
+/* line 61, ../sass/gary_afriend.scss */
+.nav ul li {
+  display: inline-block;
+  color: #747474;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+}
+/* line 66, ../sass/gary_afriend.scss */
+.nav ul li a {
+  display: inline-block;
+  color: #747474;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 74, ../sass/gary_afriend.scss */
+.nav ul li a img {
+  padding-top: 5px;
+}
+
+/* line 81, ../sass/gary_afriend.scss */
+.item {
+  position: absolute;
+  height: 100vh;
+  z-index: 1717;
+}
+/* line 85, ../sass/gary_afriend.scss */
+.item .sabah {
+  position: fixed;
+  width: 297px;
+  left: 100px;
+  top: 100px;
+}
+/* line 92, ../sass/gary_afriend.scss */
+.item .map {
+  position: fixed;
+  width: 234px;
+  height: 120px;
+  right: 100px;
+  top: 80px;
+  background: url(../img/map.png);
+}
+/* line 100, ../sass/gary_afriend.scss */
+.item .plane {
+  position: fixed;
+  width: 296px;
+  left: 150px;
+  top: calc(100vh - 200px);
+}
+
+/* line 107, ../sass/gary_afriend.scss */
+.contain_index {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kv.png) center no-repeat;
+  background-size: auto 100vh;
+}
+/* line 112, ../sass/gary_afriend.scss */
+.contain_index .ex {
+  height: 120px;
+  width: 100%;
+  background-color: #1f6baa;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
+/* line 119, ../sass/gary_afriend.scss */
+.contain_index .ex > img {
+  margin-top: 20px;
+}
+/* line 122, ../sass/gary_afriend.scss */
+.contain_index .ex .white_btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 35px;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 28px;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+/* line 144, ../sass/gary_afriend.scss */
+.contain_index .ex .white_btn span {
+  width: 22px;
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+}
+
+/* line 153, ../sass/gary_afriend.scss */
+.letter {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/wall-bg.jpg) center no-repeat;
+  background-size: 100vw 100vh;
+  position: relative;
+}
+/* line 159, ../sass/gary_afriend.scss */
+.letter .paper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40px;
+  width: 968px;
+  height: 85vh;
+  background: url(../img/paper.png) center no-repeat;
+}
+/* line 167, ../sass/gary_afriend.scss */
+.letter .paper .title {
+  position: relative;
+  width: 305px;
+  top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+}
+/* line 175, ../sass/gary_afriend.scss */
+.letter .paper .text {
+  position: relative;
+  width: 650px;
+  top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 17px;
+  line-height: 26px;
+  color: #4d4d4d;
+}
+/* line 187, ../sass/gary_afriend.scss */
+.letter .paper .sign {
+  position: absolute;
+  width: 284px;
+  top: 320px;
+  left: 450px;
+}
+/* line 193, ../sass/gary_afriend.scss */
+.letter .paper .blue_btn {
+  position: absolute;
+  top: 350px;
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  height: 35px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin-left: -100px;
+  margin-top: 28px;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+/* line 216, ../sass/gary_afriend.scss */
+.letter .paper .blue_btn span {
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+}
+/* line 223, ../sass/gary_afriend.scss */
+.letter .paper .tv {
+  position: absolute;
+  width: 319px;
+  height: 368px;
+  top: calc(100vh - 450px);
+  right: -150px;
+}
+
+/* line 232, ../sass/gary_afriend.scss */
+.lightbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+/* line 241, ../sass/gary_afriend.scss */
+.lightbox .close_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: url(../img/x.png);
+  background-size: contain;
+}
+/* line 250, ../sass/gary_afriend.scss */
+.lightbox .step_1 {
+  display: none;
+}
+/* line 252, ../sass/gary_afriend.scss */
+.lightbox .step_1 p {
+  width: 1000px;
+  position: relative;
+  margin: 60px auto 20px auto;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+/* line 262, ../sass/gary_afriend.scss */
+.lightbox .step_1 video {
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+}
+/* line 267, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s {
+  z-index: 99999;
+  position: absolute;
+  width: 800px;
+  height: 300px;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 400px);
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border: solid 3px #1f6baa;
+}
+/* line 278, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .close_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background: url(../img/x.png);
+  background-size: contain;
+}
+/* line 287, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .font {
+  width: 800px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 293, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .font p {
+  width: 450px;
+  padding-left: 20px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+/* line 302, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .messageform {
+  height: 90px;
+  width: 600px;
+  padding: 5px;
+  vertical-align: top;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 16px;
+}
+/* line 315, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .blue_btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 152px;
+  height: 30px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin: 15px auto 10px auto;
+  padding-top: 10px;
+  padding-left: 28px;
+}
+/* line 336, ../sass/gary_afriend.scss */
+.lightbox .step_1 .lightbox_s .blue_btn span {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+  background: none;
+}
+/* line 347, ../sass/gary_afriend.scss */
+.lightbox .step_2 {
+  display: none;
+  position: absolute;
+  width: 800px;
+  height: 660px;
+  top: calc(50vh - 330px);
+  left: calc(50vw - 400px);
+  margin: auto;
+  text-align: center;
+}
+/* line 356, ../sass/gary_afriend.scss */
+.lightbox .step_2 .font {
+  width: 800px;
+  margin: 0 auto 20px auto;
+  padding-top: 25px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 364, ../sass/gary_afriend.scss */
+.lightbox .step_2 .font p {
+  width: 600px;
+  padding-left: 20px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+/* line 373, ../sass/gary_afriend.scss */
+.lightbox .step_2 .title {
+  text-align: left;
+}
+/* line 376, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container {
+  height: 460px;
+  background-color: rgba(31, 107, 170, 0.25);
+  z-index: 4;
+  margin-top: 10px;
+}
+/* line 381, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select {
+  position: relative;
+  top: 50px;
+  height: 400px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: hidden;
+}
+/* line 389, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select ul {
+  font-size: 0px;
+}
+/* line 391, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select ul li {
+  position: relative;
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+  vertical-align: top;
+}
+/* line 397, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select ul li img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #1f6baa;
+}
+/* line 402, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select ul li input {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  margin: 0px;
+}
+/* line 408, ../sass/gary_afriend.scss */
+.lightbox .step_2 .container .select ul li p {
+  width: 60px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+}
+/* line 420, ../sass/gary_afriend.scss */
+.lightbox .step_2 .lightbox_s {
+  display: block;
+  z-index: 99999;
+  position: fixed;
+  width: 800px;
+  height: 300px;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 400px);
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border: solid 3px #1f6baa;
+}
+/* line 432, ../sass/gary_afriend.scss */
+.lightbox .step_2 .lightbox_s .close_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background: url(../img/x.png);
+  background-size: contain;
+}
+/* line 441, ../sass/gary_afriend.scss */
+.lightbox .step_2 .lightbox_s .font {
+  width: 800px;
+  margin-top: 110px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 451, ../sass/gary_afriend.scss */
+.lightbox .blue_btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 120px;
+  height: 30px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin: 10px auto 10px auto;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+/* line 472, ../sass/gary_afriend.scss */
+.lightbox .blue_btn span {
+  width: 22px;
+  height: 30px;
+  background: url(../img/arrow_blue.png) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  margin-left: 10px;
+}
+/* line 482, ../sass/gary_afriend.scss */
+.lightbox .step_3 {
+  display: none;
+  position: absolute;
+  width: 1000px;
+  height: 720px;
+  top: calc(50vh - 360px);
+  left: calc(50vw - 500px);
+  margin: auto;
+  text-align: center;
+}
+/* line 491, ../sass/gary_afriend.scss */
+.lightbox .step_3 .font {
+  width: 800px;
+  margin: 10px auto 20px auto;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 498, ../sass/gary_afriend.scss */
+.lightbox .step_3 .font p {
+  width: 600px;
+  padding-left: 20px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+/* line 507, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content {
+  width: 1000px;
+  height: 472px;
+  background: url(../img/wheel_bg.png) center no-repeat;
+  background-size: contain;
+  margin: 60px auto 0 auto;
+  position: relative;
+}
+/* line 514, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .wheel {
+  width: 422px;
+  height: 515px;
+  position: absolute;
+  top: 50px;
+  left: 280px;
+  background: url(../img/ferris_wheel.png) center no-repeat;
+}
+/* line 522, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .start_btn {
+  width: 134px;
+  height: 136px;
+  position: absolute;
+  top: 200px;
+  left: 425px;
+  background: url(../img/start.png) center no-repeat;
+}
+/* line 530, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane1 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 0px;
+  left: 425px;
+  z-index: 8888;
+}
+/* line 538, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane2 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 110px;
+  left: 600px;
+  z-index: 8888;
+}
+/* line 546, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane3 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  z-index: 8888;
+}
+/* line 554, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane4 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 420px;
+  left: 425px;
+  z-index: 8888;
+}
+/* line 562, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane5 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  z-index: 8888;
+}
+/* line 570, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .fat_plane6 {
+  width: 133px;
+  height: 129px;
+  position: absolute;
+  top: 110px;
+  left: 250px;
+  z-index: 8888;
+}
+/* line 578, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic1 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -42px;
+  left: 455px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 587, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic2 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 65px;
+  left: 630px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 596, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic3 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 255px;
+  left: 630px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 605, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic4 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 375px;
+  left: 455px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 614, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic5 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 255px;
+  left: 280px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 623, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .pic6 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 65px;
+  left: 280px;
+  z-index: 9999;
+  border: 3px solid #1f6baa;
+}
+/* line 632, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name1 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 87px;
+  left: 432px;
+  z-index: 9999;
+}
+/* line 640, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name1 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bolder;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+}
+/* line 649, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name2 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 196px;
+  left: 607px;
+  z-index: 9999;
+}
+/* line 657, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name2 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+  font-weight: bolder;
+}
+/* line 666, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name3 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 387px;
+  left: 607px;
+  z-index: 9999;
+}
+/* line 674, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name3 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+  font-weight: bolder;
+}
+/* line 683, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name4 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 506px;
+  left: 432px;
+  z-index: 9999;
+}
+/* line 691, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name4 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+  font-weight: bolder;
+}
+/* line 700, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name5 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 387px;
+  left: 257px;
+  z-index: 9999;
+}
+/* line 708, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name5 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+  font-weight: bolder;
+}
+/* line 717, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name6 {
+  display: inline-table;
+  width: 116px;
+  height: 34px;
+  position: absolute;
+  top: 196px;
+  left: 257px;
+  z-index: 9999;
+}
+/* line 725, ../sass/gary_afriend.scss */
+.lightbox .step_3 .wheel_content .name6 p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 14px;
+  font-weight: bolder;
+}
+/* line 736, ../sass/gary_afriend.scss */
+.lightbox .result {
+  display: none;
+  position: absolute;
+  width: 1000px;
+  height: 560px;
+  margin: auto;
+  top: calc(50vh - 280px);
+  left: calc(50vw - 500px);
+  text-align: center;
+}
+/* line 745, ../sass/gary_afriend.scss */
+.lightbox .result .font {
+  width: 1000px;
+  margin: 0 auto 15px auto;
+  padding-top: 25px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* line 755, ../sass/gary_afriend.scss */
+.lightbox .result canvas {
+  display: block;
+  width: 750px;
+  height: 395px;
+  margin: auto;
+  background-color: #1f6baa;
+}
+/* line 762, ../sass/gary_afriend.scss */
+.lightbox .result .blue_btn {
+  margin-top: 20px;
+}
+/* line 765, ../sass/gary_afriend.scss */
+.lightbox .result div:nth-child(4) {
+  width: 200px;
+  margin-left: 15px;
+}
+/* line 770, ../sass/gary_afriend.scss */
+.lightbox .share {
+  display: none;
+  position: absolute;
+  width: 1000px;
+  height: 660px;
+  top: calc(50vh - 330px);
+  left: calc(50vw - 500px);
+  text-align: center;
+}
+/* line 778, ../sass/gary_afriend.scss */
+.lightbox .share .font {
+  width: 1000px;
+  margin: 0 auto 15px auto;
+  padding-top: 25px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+/* line 788, ../sass/gary_afriend.scss */
+.lightbox .share canvas {
+  display: block;
+  width: 750px;
+  height: 395px;
+  margin: auto;
+  background-color: #1f6baa;
+}
+/* line 795, ../sass/gary_afriend.scss */
+.lightbox .share form {
+  width: 355px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+/* line 801, ../sass/gary_afriend.scss */
+.lightbox .share form .messageform {
+  width: 355px;
+  height: 94px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  padding: 3px;
+  font-size: 12px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  color: gray;
+  font-weight: bold;
+  text-align: justify;
+  resize: none;
+}
+/* line 816, ../sass/gary_afriend.scss */
+.lightbox .share .fb_message {
+  height: 90px;
+  width: 355px;
+  margin-top: 15px;
+  padding: 5px;
+  display: inline-block;
+  vertical-align: top;
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #9e9e9e;
+  line-height: 16px;
+  text-align: justify;
+}
+/* line 832, ../sass/gary_afriend.scss */
+.lightbox .share .fb_message p {
+  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 16px;
+  color: black;
+  line-height: 20px;
+}
+/* line 842, ../sass/gary_afriend.scss */
+.lightbox .share .blue_btn {
+  display: block;
+  position: relative;
+  vertical-align: top;
+  width: 136px;
+  height: 30px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin: 10px auto 10px auto;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+/* line 863, ../sass/gary_afriend.scss */
+.lightbox .share .blue_btn span {
+  background: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 6px;
+  margin-left: 10px;
+}
+/* line 873, ../sass/gary_afriend.scss */
+.lightbox .feedback {
+  display: none;
+  position: absolute;
+  width: 1000px;
+  height: 224px;
+  margin: auto;
+  top: calc(50vh - 112px);
+  left: calc(50vw - 500px);
+  text-align: center;
+}
+/* line 882, ../sass/gary_afriend.scss */
+.lightbox .feedback .font {
+  width: 1000px;
+  margin: 0 auto 15px auto;
+  padding-top: 20px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+/* line 892, ../sass/gary_afriend.scss */
+.lightbox .feedback .font p {
+  font-size: 16px;
+  color: gray;
+}
+/* line 897, ../sass/gary_afriend.scss */
+.lightbox .feedback .blue_btn {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 32px;
+  margin-left: 10px;
+}
+/* line 906, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_fb {
+  display: block;
+  z-index: 99999;
+  position: fixed;
+  width: 800px;
+  height: 300px;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 400px);
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border: solid 3px #1f6baa;
+}
+/* line 918, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_fb .close_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background: url(../img/x.png);
+  background-size: contain;
+}
+/* line 927, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_fb .font {
+  width: 800px;
+  margin-top: 80px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 935, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_fb .blue_btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 176px;
+  height: 40px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin: 15px auto 10px auto;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+/* line 956, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_fb .blue_btn span {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+}
+/* line 965, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_alert {
+  display: block;
+  z-index: 99999;
+  position: fixed;
+  width: 800px;
+  height: 300px;
+  top: calc(50vh - 150px);
+  left: calc(50vw - 400px);
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border: solid 3px #1f6baa;
+}
+/* line 977, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_alert .close_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  background: url(../img/x.png);
+  background-size: contain;
+}
+/* line 986, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_alert .font {
+  width: 800px;
+  margin-top: 80px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 994, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_alert .blue_btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 156px;
+  height: 40px;
+  border-color: #1f6baa;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1f6baa;
+  text-align: left;
+  margin: 15px auto 10px auto;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+/* line 1015, ../sass/gary_afriend.scss */
+.lightbox .feedback .lightbox_s_alert .blue_btn span {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 10px;
+  margin-left: 10px;
+  background: none;
+}
+/* line 1026, ../sass/gary_afriend.scss */
+.lightbox .profile {
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 500px);
+  text-align: center;
+}
+/* line 1034, ../sass/gary_afriend.scss */
+.lightbox .profile .font {
+  width: 1000px;
+  margin: 0 auto 15px auto;
+  padding-top: 20px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+/* line 1044, ../sass/gary_afriend.scss */
+.lightbox .profile .font p {
+  font-size: 16px;
+  color: gray;
+}
+/* line 1049, ../sass/gary_afriend.scss */
+.lightbox .profile form {
+  width: 740px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #1f6baa;
+}
+/* line 1055, ../sass/gary_afriend.scss */
+.lightbox .profile form .field {
+  width: 265px;
+  height: 30px;
+  padding-left: 15px;
+  margin: 15px 5px 0 5px;
+  border: none;
+  background-color: #b7d3f0;
+}
+/* line 1063, ../sass/gary_afriend.scss */
+.lightbox .profile form span {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+}
+/* line 1068, ../sass/gary_afriend.scss */
+.lightbox .profile form p {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+/* line 1074, ../sass/gary_afriend.scss */
+.lightbox .profile form .blue_font {
+  margin-top: 20px;
+}
+/* line 1078, ../sass/gary_afriend.scss */
+.lightbox .profile .blue_btn {
+  width: 150px;
+  height: 42px;
+  text-align: center;
+  padding: 0px 0px 0 0px;
+  margin-top: 25px;
+  background-color: white;
+}
+
+/*-------------------------------旅遊朋友---------------------------------*/
+/* line 1090, ../sass/gary_afriend.scss */
+.contain_friend {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kv_w.png) center no-repeat;
+  background-size: auto 100vh;
+}
+/* line 1095, ../sass/gary_afriend.scss */
+.contain_friend .title {
+  width: 764px;
+  height: 259px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 110px;
+  background: url(../img/friend_title.png) center no-repeat;
+}
+/* line 1103, ../sass/gary_afriend.scss */
+.contain_friend .title .friend {
+  height: 150px;
+  width: 200px;
+  position: relative;
+  top: 80px;
+  left: 160px;
+}
+/* line 1109, ../sass/gary_afriend.scss */
+.contain_friend .title .friend .pic {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1114, ../sass/gary_afriend.scss */
+.contain_friend .title .friend .pic img {
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-color: #1f6baa;
+  border-bottom-width: 2px;
+}
+/* line 1122, ../sass/gary_afriend.scss */
+.contain_friend .title .friend .name {
+  width: 200px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  color: #1f6baa;
+}
+/* line 1135, ../sass/gary_afriend.scss */
+.contain_friend .title .times {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 80px;
+  left: 420px;
+  background-color: #c7daea;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  color: #1f6baa;
+  padding-top: 20px;
+}
+/* line 1148, ../sass/gary_afriend.scss */
+.contain_friend .title .times span {
+  font-size: 70px;
+}
+/* line 1153, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab {
+  position: relative;
+  top: 150px;
+  width: 900px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 1160, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs {
+  font-size: 0px;
+  position: relative;
+  height: 35px;
+}
+/* line 1164, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs li {
+  width: 180px;
+  height: 35px;
+  background: url(../img/tab_a.png) center no-repeat;
+}
+/* line 1168, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs li a {
+  width: 180px;
+  height: 35px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #d8d8d9;
+}
+/* line 1175, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs li a p {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+/* line 1181, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs .active {
+  z-index: 1000;
+  color: white;
+  background: url(../img/tab_b.png) center no-repeat;
+}
+/* line 1186, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs .tab1 {
+  position: absolute;
+}
+/* line 1189, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tabs .tab2 {
+  position: absolute;
+  left: 150px;
+}
+/* line 1194, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tab_container {
+  width: 900px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-bottom: 3px solid #1f6baa;
+  border-top: 3px solid #1f6baa;
+}
+/* line 1202, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tab_container .tab_content {
+  position: relative;
+  top: 50px;
+  width: 760px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0px;
+  overflow: hidden;
+}
+/* line 1212, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tab_container .tab_content ul li {
+  padding: 15px 10px 0px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 1216, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tab_container .tab_content ul li p {
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bolder;
+}
+/* line 1225, ../sass/gary_afriend.scss */
+.contain_friend .friend_tab .tab_container .tab_content ul li img {
+  width: 74px;
+  height: 74px;
+  border: solid;
+  border-width: 3px;
+  border-color: #1f6baa;
+}
+/* line 1237, ../sass/gary_afriend.scss */
+.contain_friend #tab2 {
+  display: none;
+}
+
+/*-------------------------------活動辦法---------------------------------*/
+/* line 1242, ../sass/gary_afriend.scss */
+.contain_rule {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kv_w.png) center no-repeat;
+  background-size: auto 100vh;
+}
+/* line 1247, ../sass/gary_afriend.scss */
+.contain_rule .title {
+  width: 244px;
+  height: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 110px;
+}
+/* line 1255, ../sass/gary_afriend.scss */
+.contain_rule .content {
+  position: relative;
+  top: 180px;
+  width: 900px;
+  height: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+/* line 1268, ../sass/gary_afriend.scss */
+.contain_rule .content .mCustomScrollBox {
+  padding-right: 50px;
+}
+/* line 1271, ../sass/gary_afriend.scss */
+.contain_rule .content h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #1f6baa;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* line 1279, ../sass/gary_afriend.scss */
+.contain_rule .content h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #1f6baa;
+  font-weight: bold;
+}
+/* line 1285, ../sass/gary_afriend.scss */
+.contain_rule .content h3 {
+  margin-top: 5px;
+  color: #1f6baa;
+  font-weight: bold;
+}
+
+/*-------------------------------專輯介紹---------------------------------*/
+/* line 1293, ../sass/gary_afriend.scss */
+.contain_intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/kv.jpg) center no-repeat;
+  background-size: auto 100vh;
+}
+/* line 1298, ../sass/gary_afriend.scss */
+.contain_intro .content {
+  position: absolute;
+  width: 80%;
+  height: 560px;
+  top: calc(50vh - 280px);
+  left: calc(50vw - 40%);
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+/* line 1310, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box {
+  position: relative;
+  width: 100%;
+  height: 2500px;
+}
+/* line 1314, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .title {
+  width: 376px;
+  height: 360px;
+  background: url(../img/cd_title.png) center no-repeat;
+}
+/* line 1319, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_1 {
+  position: absolute;
+  right: 20px;
+  width: 467px;
+  height: 384px;
+  margin-top: 20px;
+  background: url(../img/cd_1.png) center no-repeat;
+}
+/* line 1326, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_1 .font {
+  position: relative;
+  width: 330px;
+  height: 384px;
+  top: 80px;
+  left: 80px;
+}
+/* line 1332, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_1 .font h1 {
+  font-size: 28px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+}
+/* line 1337, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_1 .font p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: normal;
+  line-height: 34px;
+}
+/* line 1347, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_2 {
+  position: absolute;
+  top: 800px;
+  width: 413px;
+  height: 491px;
+  background: url(../img/cd_2.png) center no-repeat;
+}
+/* line 1353, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_2 .font {
+  position: relative;
+  width: 330px;
+  height: 384px;
+  top: 70px;
+  left: 45px;
+}
+/* line 1359, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_2 .font h1 {
+  font-size: 28px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+}
+/* line 1364, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_2 .font p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: normal;
+  line-height: 34px;
+}
+/* line 1374, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_3 {
+  position: absolute;
+  top: 1300px;
+  right: 20px;
+  width: 472px;
+  height: 587px;
+  background: url(../img/cd_3.png) center no-repeat;
+}
+/* line 1381, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_3 .font {
+  position: relative;
+  width: 330px;
+  height: 384px;
+  top: 85px;
+  left: 108px;
+}
+/* line 1387, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_3 .font h1 {
+  font-size: 28px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+}
+/* line 1392, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_3 .font p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: normal;
+  line-height: 34px;
+}
+/* line 1402, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_4 {
+  position: absolute;
+  top: 1950px;
+  width: 533px;
+  height: 453px;
+  background: url(../img/cd_4.png) center no-repeat;
+}
+/* line 1408, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_4 .font {
+  position: relative;
+  width: 330px;
+  height: 384px;
+  top: 50px;
+  left: 108px;
+}
+/* line 1414, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_4 .font h1 {
+  font-size: 28px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: bold;
+}
+/* line 1419, ../sass/gary_afriend.scss */
+.contain_intro .content .content_box .intro_4 .font p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  font-weight: normal;
+  line-height: 34px;
+}
+/* line 1430, ../sass/gary_afriend.scss */
+.contain_intro .content .mCustomScrollBox {
+  padding-right: 50px;
+}
+
+/* 行動版開始 */
+@media only screen and (max-width: 1024px) {
+  /* line 1437, ../sass/gary_afriend.scss */
+  .item {
+    position: absolute;
+    height: 100vh;
+    z-index: 1717;
+  }
+  /* line 1441, ../sass/gary_afriend.scss */
+  .item .sabah {
+    position: fixed;
+    width: 250px;
+    height: auto;
+    left: 60px;
+    top: 80px;
+  }
+  /* line 1449, ../sass/gary_afriend.scss */
+  .item .map {
+    position: fixed;
+    width: 180px;
+    height: 92px;
+    right: 10px;
+    top: 80px;
+    background: url(../img/map.png);
+    background-size: contain;
+  }
+  /* line 1458, ../sass/gary_afriend.scss */
+  .item .plane {
+    position: fixed;
+    width: 250px;
+    height: auto;
+    left: 50px;
+    top: calc(100vh - 180px);
+  }
+
+  /* line 1466, ../sass/gary_afriend.scss */
+  .contain_index {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kv.png) center no-repeat;
+    background-size: auto 100vh;
+  }
+  /* line 1471, ../sass/gary_afriend.scss */
+  .contain_index .ex {
+    height: 100px;
+    width: 100%;
+    background-color: #1f6baa;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
+  /* line 1478, ../sass/gary_afriend.scss */
+  .contain_index .ex > img {
+    margin-top: 20px;
+    width: 390px;
+    height: 42px;
+  }
+  /* line 1483, ../sass/gary_afriend.scss */
+  .contain_index .ex .white_btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 105px;
+    height: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  /* line 1505, ../sass/gary_afriend.scss */
+  .contain_index .ex .white_btn span {
+    width: 15px;
+    position: absolute;
+    top: 6px;
+    margin-left: 10px;
+  }
+
+  /* line 1517, ../sass/gary_afriend.scss */
+  .lightbox .step_1 p {
+    width: 600px;
+    line-height: 24px;
+  }
+
+  /* line 1523, ../sass/gary_afriend.scss */
+  .letter {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/wall-bg.jpg) center no-repeat;
+    background-size: 100vw 100vh;
+    position: relative;
+  }
+  /* line 1529, ../sass/gary_afriend.scss */
+  .letter .paper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    width: 750px;
+    height: 85vh;
+    background: url(../img/paper.png) center no-repeat;
+  }
+  /* line 1537, ../sass/gary_afriend.scss */
+  .letter .paper .title {
+    position: relative;
+    width: 250px;
+    height: auto;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+  }
+  /* line 1546, ../sass/gary_afriend.scss */
+  .letter .paper .text {
+    position: relative;
+    width: 520px;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4d4d4d;
+  }
+  /* line 1558, ../sass/gary_afriend.scss */
+  .letter .paper .sign {
+    position: relative;
+    width: 240px;
+    height: auto;
+    top: -70px;
+    left: 250px;
+  }
+  /* line 1565, ../sass/gary_afriend.scss */
+  .letter .paper .blue_btn {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 35px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: -100px;
+    padding-top: 15px;
+    padding-left: 40px;
+  }
+  /* line 1588, ../sass/gary_afriend.scss */
+  .letter .paper .blue_btn span {
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+  }
+  /* line 1595, ../sass/gary_afriend.scss */
+  .letter .paper .tv {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: calc(100vh - 380px);
+    right: -100px;
+  }
+
+  /*-------------------------------旅遊朋友---------------------------------*/
+  /* line 1607, ../sass/gary_afriend.scss */
+  .contain_friend .title {
+    top: 90px;
+  }
+  /* line 1610, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab {
+    position: relative;
+    top: 120px;
+    width: 900px;
+    height: auto;
+  }
+  /* line 1615, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container {
+    height: 320px;
+  }
+  /* line 1617, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container .tab_content {
+    top: 30px;
+  }
+  /* line 1622, ../sass/gary_afriend.scss */
+  .contain_friend #tab2 {
+    display: none;
+  }
+
+  /*-------------------------------活動辦法---------------------------------*/
+  /* line 1628, ../sass/gary_afriend.scss */
+  .contain_rule .content {
+    width: 700px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 1635, ../sass/gary_afriend.scss */
+  .content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  /* line 1639, ../sass/gary_afriend.scss */
+  footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+    color: black;
+    font-size: 12px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    z-index: 99999;
+  }
+
+  /* line 1650, ../sass/gary_afriend.scss */
+  .item .map {
+    background: none;
+  }
+
+  /* line 1654, ../sass/gary_afriend.scss */
+  .nav_mob {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.05) 3px 3px 3px;
+    z-index: 9999;
+  }
+  /* line 1663, ../sass/gary_afriend.scss */
+  .nav_mob .logo {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: contain;
+  }
+  /* line 1673, ../sass/gary_afriend.scss */
+  .nav_mob .menubtn {
+    width: 30px;
+    height: 30px;
+    float: right;
+    background: url(../img/btn_menu_a.png);
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  /* line 1681, ../sass/gary_afriend.scss */
+  .nav_mob .navi {
+    position: fixed;
+    right: 0px;
+    top: 45px;
+    width: 200px;
+    height: auto;
+    border-bottom: #1f6baa;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    text-align: center;
+  }
+  /* line 1691, ../sass/gary_afriend.scss */
+  .nav_mob .navi li {
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #747474;
+    font-weight: bold;
+    background-color: white;
+  }
+  /* line 1699, ../sass/gary_afriend.scss */
+  .nav_mob .navi li a {
+    color: #747474;
+  }
+  /* line 1702, ../sass/gary_afriend.scss */
+  .nav_mob .navi li a:hover {
+    color: black;
+  }
+  /* line 1706, ../sass/gary_afriend.scss */
+  .nav_mob .navi li:hover {
+    background-color: #eeeeee;
+  }
+
+  /* line 1711, ../sass/gary_afriend.scss */
+  .nav {
+    display: none;
+  }
+
+  /* line 1714, ../sass/gary_afriend.scss */
+  .contain_index {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kv.png) center no-repeat;
+    background-size: auto 100vh;
+  }
+  /* line 1719, ../sass/gary_afriend.scss */
+  .contain_index .ex {
+    height: 15%;
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: #1f6baa;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+  }
+  /* line 1727, ../sass/gary_afriend.scss */
+  .contain_index .ex > img {
+    margin-top: 10px;
+    width: 65%;
+    height: auto;
+  }
+  /* line 1732, ../sass/gary_afriend.scss */
+  .contain_index .ex .white_btn {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    width: 170px;
+    height: 24px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-left: 70px;
+  }
+  /* line 1755, ../sass/gary_afriend.scss */
+  .contain_index .ex .white_btn span {
+    width: 15px;
+    position: absolute;
+    top: 6px;
+    margin-left: 10px;
+  }
+
+  /* line 1765, ../sass/gary_afriend.scss */
+  .letter {
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-size: none;
+    background-color: #eeeeee;
+    position: relative;
+  }
+  /* line 1772, ../sass/gary_afriend.scss */
+  .letter .paper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    width: 80%;
+    height: 90%;
+    background: none;
+    background-color: white;
+  }
+  /* line 1781, ../sass/gary_afriend.scss */
+  .letter .paper .title {
+    position: relative;
+    width: 250px;
+    height: auto;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+  }
+  /* line 1790, ../sass/gary_afriend.scss */
+  .letter .paper .text {
+    position: relative;
+    width: 80%;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 15px;
+    line-height: 26px;
+    color: #4d4d4d;
+  }
+  /* line 1802, ../sass/gary_afriend.scss */
+  .letter .paper .sign {
+    position: relative;
+    width: 240px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    float: right;
+    margin-right: 10px;
+  }
+  /* line 1811, ../sass/gary_afriend.scss */
+  .letter .paper .blue_btn {
+    position: relative;
+    top: 0px;
+    display: block;
+    vertical-align: top;
+    width: 160px;
+    height: 35px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-left: 40px;
+    clear: both;
+  }
+  /* line 1836, ../sass/gary_afriend.scss */
+  .letter .paper .blue_btn span {
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+  }
+  /* line 1843, ../sass/gary_afriend.scss */
+  .letter .paper .tv {
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 220px;
+    height: auto;
+    top: 0;
+    right: 0px;
+  }
+
+  /* line 1858, ../sass/gary_afriend.scss */
+  .lightbox .step_1 p {
+    width: 600px;
+    position: relative;
+  }
+  /* line 1862, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s {
+    width: 700px;
+    left: calc(50vw - 350px);
+  }
+  /* line 1865, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s .font {
+    width: 700px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* line 1874, ../sass/gary_afriend.scss */
+  .lightbox .step_2 {
+    width: 700px;
+    top: calc(50vh - 330px);
+    left: calc(50vw - 350px);
+  }
+  /* line 1878, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .font {
+    width: 700px;
+  }
+  /* line 1882, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select {
+    width: 600px;
+  }
+  /* line 1886, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .lightbox_s {
+    width: 80%;
+    left: calc(50vw - 40%);
+  }
+  /* line 1889, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .lightbox_s .font {
+    width: 90%;
+  }
+  /* line 1894, ../sass/gary_afriend.scss */
+  .lightbox .blue_btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 120px;
+    height: 30px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin: 10px auto 10px auto;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  /* line 1915, ../sass/gary_afriend.scss */
+  .lightbox .blue_btn span {
+    width: 22px;
+    height: 30px;
+    background: url(../img/arrow_blue.png) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 5px;
+    margin-left: 10px;
+  }
+  /* line 1926, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .font {
+    width: 800px;
+  }
+  /* line 1928, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .font p {
+    width: 650px;
+  }
+  /* line 1933, ../sass/gary_afriend.scss */
+  .lightbox .result {
+    width: 700px;
+    left: calc(50vw - 350px);
+  }
+  /* line 1936, ../sass/gary_afriend.scss */
+  .lightbox .result .font {
+    width: 700px;
+  }
+  /* line 1939, ../sass/gary_afriend.scss */
+  .lightbox .result canvas {
+    width: 700px;
+    height: 369px;
+  }
+  /* line 1944, ../sass/gary_afriend.scss */
+  .lightbox .share {
+    width: 700px;
+    left: calc(50vw - 350px);
+  }
+  /* line 1947, ../sass/gary_afriend.scss */
+  .lightbox .share .font {
+    width: 700px;
+  }
+  /* line 1950, ../sass/gary_afriend.scss */
+  .lightbox .share canvas {
+    width: 700px;
+    height: 369px;
+  }
+  /* line 1954, ../sass/gary_afriend.scss */
+  .lightbox .share form {
+    width: 330px;
+  }
+  /* line 1956, ../sass/gary_afriend.scss */
+  .lightbox .share form .messageform {
+    width: 330px;
+  }
+  /* line 1960, ../sass/gary_afriend.scss */
+  .lightbox .share .fb_message {
+    width: 330px;
+  }
+  /* line 1965, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb {
+    width: 700px;
+    left: calc(50vw - 350px);
+  }
+  /* line 1968, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb .font {
+    width: 600px;
+  }
+  /* line 1972, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert {
+    width: 700px;
+    left: calc(50vw - 350px);
+  }
+  /* line 1975, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert .font {
+    width: 600px;
+  }
+
+  /*-----------旅遊朋友--------------*/
+  /* line 1982, ../sass/gary_afriend.scss */
+  .contain_friend {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/kv_w.png) center no-repeat;
+    background-size: auto 100vh;
+  }
+  /* line 1987, ../sass/gary_afriend.scss */
+  .contain_friend .title {
+    width: 260px;
+    height: 164px;
+    top: 60px;
+    padding-bottom: 10px;
+    background: url(../img/mob_friend_title.png) center no-repeat;
+    background-size: contain;
+  }
+  /* line 1994, ../sass/gary_afriend.scss */
+  .contain_friend .title .friend {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 65px;
+    left: 30px;
+  }
+  /* line 2000, ../sass/gary_afriend.scss */
+  .contain_friend .title .friend .pic {
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  /* line 2005, ../sass/gary_afriend.scss */
+  .contain_friend .title .friend .name {
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  /* line 2014, ../sass/gary_afriend.scss */
+  .contain_friend .title .times {
+    height: 60px;
+    width: 65px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    top: 70px;
+    left: 150px;
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+  }
+  /* line 2024, ../sass/gary_afriend.scss */
+  .contain_friend .title .times span {
+    font-size: 35px;
+  }
+  /* line 2029, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab {
+    position: relative;
+    top: 80px;
+    width: 290px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 2036, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs {
+    font-size: 0px;
+    position: relative;
+    height: 24px;
+  }
+  /* line 2040, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs li {
+    width: 120px;
+    height: 24px;
+    background: url(../img/tab_a.png) center no-repeat;
+  }
+  /* line 2044, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs li a {
+    width: 120px;
+    height: 24px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #d8d8d9;
+  }
+  /* line 2051, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs li a p {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  /* line 2057, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs .active {
+    z-index: 1000;
+    color: white;
+    background: url(../img/tab_b.png) center no-repeat;
+  }
+  /* line 2062, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs .tab1 {
+    position: absolute;
+  }
+  /* line 2065, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tabs .tab2 {
+    position: absolute;
+    left: 120px;
+  }
+  /* line 2070, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container {
+    width: 290px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-bottom: 3px solid #1f6baa;
+    border-top: 3px solid #1f6baa;
+  }
+  /* line 2078, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container .tab_content {
+    position: relative;
+    top: 20px;
+    width: 260px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0px;
+    overflow: hidden;
+  }
+  /* line 2088, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container .tab_content ul li {
+    padding: 10px 6px 0px 6px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 2092, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container .tab_content ul li p {
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-weight: bolder;
+  }
+  /* line 2101, ../sass/gary_afriend.scss */
+  .contain_friend .friend_tab .tab_container .tab_content ul li img {
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-width: 3px;
+    border-color: #1f6baa;
+  }
+  /* line 2113, ../sass/gary_afriend.scss */
+  .contain_friend #tab2 {
+    display: none;
+  }
+
+  /*-------------------------------活動辦法---------------------------------*/
+  /* line 2119, ../sass/gary_afriend.scss */
+  .contain_rule .title {
+    width: 170px;
+    height: auto;
+    top: 80px;
+  }
+  /* line 2124, ../sass/gary_afriend.scss */
+  .contain_rule .content {
+    top: 110px;
+    width: 80%;
+    height: 65%;
+    font-size: 14px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    line-height: 20px;
+  }
+  /* line 2131, ../sass/gary_afriend.scss */
+  .contain_rule .content .mCustomScrollBox {
+    padding-right: 25px;
+  }
+  /* line 2134, ../sass/gary_afriend.scss */
+  .contain_rule .content h1 {
+    line-height: 28px;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  /* line 2139, ../sass/gary_afriend.scss */
+  .contain_rule .content h2 {
+    font-size: 16px;
+  }
+  /* line 2142, ../sass/gary_afriend.scss */
+  .contain_rule .content h3 {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /*-------------------------------專輯介紹---------------------------------*/
+  /* line 2151, ../sass/gary_afriend.scss */
+  .content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  /* line 2156, ../sass/gary_afriend.scss */
+  .lightbox .close_btn {
+    width: 25px;
+    height: 25px;
+  }
+  /* line 2161, ../sass/gary_afriend.scss */
+  .lightbox .step_1 p {
+    width: 300px;
+    margin: 50px auto 20px auto;
+    font-size: 16px;
+  }
+  /* line 2166, ../sass/gary_afriend.scss */
+  .lightbox .step_1 video {
+    height: 60vh;
+  }
+  /* line 2169, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s {
+    position: absolute;
+    width: 80%;
+    height: 300px;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 40%);
+    text-align: center;
+  }
+  /* line 2176, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s .close_btn {
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    right: -12px;
+  }
+  /* line 2182, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s .font {
+    width: 250px;
+    height: auto;
+    margin: 10px auto 0 auto;
+  }
+  /* line 2186, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s .font p {
+    width: 220px;
+    height: auto;
+    padding-left: 0px;
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+  }
+  /* line 2195, ../sass/gary_afriend.scss */
+  .lightbox .step_1 .lightbox_s .messageform {
+    width: 220px;
+    font-size: 14px;
+  }
+  /* line 2201, ../sass/gary_afriend.scss */
+  .lightbox .step_2 {
+    position: absolute;
+    width: 320px;
+    height: 420px;
+    top: calc(50vh - 210px);
+    left: calc(50vw - 160px);
+    margin: auto;
+    text-align: center;
+  }
+  /* line 2209, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .font {
+    width: 300px;
+    margin: 0 auto 10px auto;
+    padding-top: 0px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* line 2217, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .font p {
+    width: 300px;
+    padding-left: 0px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+  }
+  /* line 2226, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .title {
+    text-align: left;
+  }
+  /* line 2229, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container {
+    height: 220px;
+    background-color: rgba(31, 107, 170, 0.25);
+    z-index: 4;
+    margin-top: 10px;
+  }
+  /* line 2234, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select {
+    position: relative;
+    top: 20px;
+    height: 180px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+  }
+  /* line 2242, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select ul {
+    font-size: 0px;
+  }
+  /* line 2244, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select ul li {
+    position: relative;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    vertical-align: top;
+  }
+  /* line 2250, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select ul li img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2255, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select ul li input {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    margin: 0px;
+  }
+  /* line 2261, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .container .select ul li p {
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+  }
+  /* line 2273, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .lightbox_s {
+    z-index: 99999;
+    position: fixed;
+    width: 80%;
+    height: 150px;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 40%);
+    text-align: center;
+  }
+  /* line 2281, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .lightbox_s .close_btn {
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    right: -12px;
+  }
+  /* line 2287, ../sass/gary_afriend.scss */
+  .lightbox .step_2 .lightbox_s .font {
+    width: 90%;
+    height: auto;
+    margin: 60px auto 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* line 2296, ../sass/gary_afriend.scss */
+  .lightbox .blue_btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 120px;
+    height: 24px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin: 10px auto 10px auto;
+    padding-top: 6px;
+    padding-left: 40px;
+  }
+  /* line 2317, ../sass/gary_afriend.scss */
+  .lightbox .blue_btn span {
+    width: 16px;
+    height: 22px;
+    background: url(../img/arrow_blue.png) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 4px;
+    margin-left: 10px;
+  }
+  /* line 2327, ../sass/gary_afriend.scss */
+  .lightbox .step_3 {
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    top: calc(50vh - 210px);
+    left: calc(50vw - 150px);
+    margin: auto;
+    text-align: center;
+  }
+  /* line 2335, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .font {
+    width: 300px;
+    margin: 0 auto 10px auto;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* line 2342, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .font p {
+    width: 300px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+  }
+  /* line 2351, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content {
+    width: 300px;
+    height: auto;
+    background: none;
+    background-size: contain;
+    margin: 0px auto 0 auto;
+    position: relative;
+  }
+  /* line 2358, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .wheel {
+    width: 229px;
+    height: 280px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    background: url(../img/ferris_wheel.png) center no-repeat;
+    background-size: contain;
+  }
+  /* line 2367, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .start_btn {
+    width: 73px;
+    height: 73px;
+    top: 95px;
+    left: 108px;
+    background-size: contain;
+  }
+  /* line 2374, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane1 {
+    width: 70px;
+    height: 70px;
+    top: 0px;
+    left: 110px;
+  }
+  /* line 2380, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane2 {
+    width: 70px;
+    height: 70px;
+    top: 50px;
+    left: 200px;
+  }
+  /* line 2386, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane3 {
+    width: 70px;
+    height: 70px;
+    top: 160px;
+    left: 200px;
+  }
+  /* line 2392, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane4 {
+    width: 70px;
+    height: 70px;
+    top: 210px;
+    left: 110px;
+  }
+  /* line 2398, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane5 {
+    width: 70px;
+    height: 70px;
+    top: 160px;
+    left: 20px;
+  }
+  /* line 2404, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .fat_plane6 {
+    width: 70px;
+    height: 70px;
+    top: 50px;
+    left: 20px;
+  }
+  /* line 2410, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic1 {
+    width: 30px;
+    height: 30px;
+    top: -22px;
+    left: 125px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2417, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic2 {
+    width: 30px;
+    height: 30px;
+    top: 28px;
+    left: 220px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2424, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic3 {
+    width: 30px;
+    height: 30px;
+    top: 138px;
+    left: 220px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2431, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic4 {
+    width: 30px;
+    height: 30px;
+    top: 188px;
+    left: 125px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2438, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic5 {
+    width: 30px;
+    height: 30px;
+    top: 138px;
+    left: 38px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2445, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .pic6 {
+    width: 30px;
+    height: 30px;
+    top: 28px;
+    left: 38px;
+    border: 2px solid #1f6baa;
+  }
+  /* line 2452, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name1 {
+    width: 60px;
+    height: 20px;
+    top: 43px;
+    left: 115px;
+  }
+  /* line 2457, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name1 p {
+    font-size: 10px;
+  }
+  /* line 2461, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name2 {
+    width: 60px;
+    height: 20px;
+    top: 95px;
+    left: 205px;
+  }
+  /* line 2466, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name2 p {
+    font-size: 10px;
+  }
+  /* line 2470, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name3 {
+    width: 60px;
+    height: 20px;
+    top: 205px;
+    left: 205px;
+  }
+  /* line 2475, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name3 p {
+    font-size: 10px;
+  }
+  /* line 2479, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name4 {
+    width: 60px;
+    height: 20px;
+    top: 255px;
+    left: 115px;
+  }
+  /* line 2484, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name4 p {
+    font-size: 10px;
+  }
+  /* line 2488, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name5 {
+    width: 60px;
+    height: 20px;
+    top: 95px;
+    left: 24px;
+  }
+  /* line 2493, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name5 p {
+    font-size: 10px;
+  }
+  /* line 2497, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name6 {
+    width: 60px;
+    height: 20px;
+    top: 205px;
+    left: 24px;
+  }
+  /* line 2502, ../sass/gary_afriend.scss */
+  .lightbox .step_3 .wheel_content .name6 p {
+    font-size: 10px;
+  }
+  /* line 2508, ../sass/gary_afriend.scss */
+  .lightbox .result {
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    top: calc(50vh - 210px);
+    left: calc(50vw - 150px);
+  }
+  /* line 2514, ../sass/gary_afriend.scss */
+  .lightbox .result .font {
+    width: 300px;
+    margin: 0 auto 15px auto;
+    padding-top: 25px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /* line 2521, ../sass/gary_afriend.scss */
+  .lightbox .result canvas {
+    display: block;
+    width: 280px;
+    height: 148px;
+    margin: auto;
+    background-color: #1f6baa;
+  }
+  /* line 2528, ../sass/gary_afriend.scss */
+  .lightbox .result .blue_btn {
+    width: 110px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding-left: 45px;
+  }
+  /* line 2534, ../sass/gary_afriend.scss */
+  .lightbox .result div:nth-child(4) {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 50px;
+  }
+  /* line 2542, ../sass/gary_afriend.scss */
+  .lightbox .share {
+    width: 300px;
+    height: 420px;
+    top: calc(50vh - 210px);
+    left: calc(50vw - 150px);
+  }
+  /* line 2547, ../sass/gary_afriend.scss */
+  .lightbox .share .font {
+    width: 300px;
+    margin: 0 auto 5px auto;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /* line 2554, ../sass/gary_afriend.scss */
+  .lightbox .share canvas {
+    width: 260px;
+    height: 137px;
+  }
+  /* line 2558, ../sass/gary_afriend.scss */
+  .lightbox .share form {
+    width: 260px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  /* line 2562, ../sass/gary_afriend.scss */
+  .lightbox .share form .messageform {
+    width: 250px;
+    height: 44px;
+    padding: 3px;
+    font-size: 12px;
+    resize: none;
+  }
+  /* line 2570, ../sass/gary_afriend.scss */
+  .lightbox .share .fb_message {
+    height: 80px;
+    width: 248px;
+    margin-top: 10px;
+    padding: 4px;
+    vertical-align: top;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  /* line 2578, ../sass/gary_afriend.scss */
+  .lightbox .share .fb_message p {
+    margin-top: 2px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  /* line 2587, ../sass/gary_afriend.scss */
+  .lightbox .share .blue_btn {
+    display: block;
+    position: relative;
+    vertical-align: top;
+    width: 130px;
+    height: 22px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin: 10px auto 10px auto;
+    padding-top: 8px;
+    padding-left: 30px;
+  }
+  /* line 2608, ../sass/gary_afriend.scss */
+  .lightbox .share .blue_btn span {
+    background: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 6px;
+    margin-left: 10px;
+  }
+  /* line 2618, ../sass/gary_afriend.scss */
+  .lightbox .feedback {
+    width: 300px;
+    height: 360px;
+    top: calc(50vh - 180px);
+    left: calc(50vw - 150px);
+  }
+  /* line 2623, ../sass/gary_afriend.scss */
+  .lightbox .feedback .font {
+    width: 300px;
+    margin: 0 auto 5px auto;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+  }
+  /* line 2630, ../sass/gary_afriend.scss */
+  .lightbox .feedback .font p {
+    font-size: 14px;
+  }
+  /* line 2634, ../sass/gary_afriend.scss */
+  .lightbox .feedback .blue_btn {
+    width: 150px;
+    height: 30px;
+    line-height: 28px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  /* line 2642, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 300px;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 40%);
+    text-align: center;
+  }
+  /* line 2650, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb .close_btn {
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    right: -12px;
+  }
+  /* line 2656, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb .font {
+    width: 250px;
+    height: auto;
+    margin: 80px auto 0 auto;
+    font-size: 16px;
+  }
+  /* line 2662, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb .blue_btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 176px;
+    height: 34px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin: 15px auto 10px auto;
+    padding-top: 6px;
+    padding-left: 24px;
+  }
+  /* line 2683, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_fb .blue_btn span {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 9px;
+    margin-left: 10px;
+    background: none;
+  }
+  /* line 2693, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 300px;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 40%);
+    text-align: center;
+  }
+  /* line 2701, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert .close_btn {
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    right: -12px;
+  }
+  /* line 2707, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert .font {
+    width: 250px;
+    height: auto;
+    margin: 80px auto 0 auto;
+    font-size: 16px;
+  }
+  /* line 2713, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert .blue_btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 156px;
+    height: 40px;
+    border-color: #1f6baa;
+    border-style: solid;
+    border-width: 3px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1f6baa;
+    text-align: left;
+    margin: 15px auto 10px auto;
+    padding-top: 10px;
+    padding-left: 24px;
+  }
+  /* line 2734, ../sass/gary_afriend.scss */
+  .lightbox .feedback .lightbox_s_alert .blue_btn span {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    background: none;
+  }
+  /* line 2745, ../sass/gary_afriend.scss */
+  .lightbox .profile {
+    position: absolute;
+    width: 310px;
+    height: 400px;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 150px);
+    text-align: center;
+  }
+  /* line 2752, ../sass/gary_afriend.scss */
+  .lightbox .profile .font {
+    width: 310px;
+    margin: 10px auto 0px auto;
+    padding-top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  /* line 2759, ../sass/gary_afriend.scss */
+  .lightbox .profile .font p {
+    font-size: 12px;
+    color: gray;
+  }
+  /* line 2764, ../sass/gary_afriend.scss */
+  .lightbox .profile form {
+    width: 300px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #1f6baa;
+  }
+  /* line 2770, ../sass/gary_afriend.scss */
+  .lightbox .profile form .field {
+    width: 220px;
+    height: 25px;
+    padding-left: 15px;
+    margin: 10px 5px 0 5px;
+  }
+  /* line 2776, ../sass/gary_afriend.scss */
+  .lightbox .profile form span {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+  }
+  /* line 2781, ../sass/gary_afriend.scss */
+  .lightbox .profile form p {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  /* line 2787, ../sass/gary_afriend.scss */
+  .lightbox .profile form .blue_font {
+    margin-top: 10px;
+  }
+  /* line 2791, ../sass/gary_afriend.scss */
+  .lightbox .profile .blue_btn {
+    width: 150px;
+    height: 34px;
+    text-align: center;
+    padding: 0px 0px 0 0px;
+    margin-top: 10px;
+    background-color: white;
+  }
+
+  /* line 2802, ../sass/gary_afriend.scss */
+  .contain_intro .content {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: calc(50vh - 40%);
+    left: calc(50vw - 45%);
+    font-size: 14px;
+    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  /* line 2812, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+  /* line 2817, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .title {
+    width: 250px;
+    height: 239px;
+    margin: auto;
+    background: url(../img/cd_title.png) center no-repeat;
+    background-size: contain;
+  }
+  /* line 2824, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_1 {
+    position: relative;
+    right: 0px;
+    width: 250px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    background: none;
+    background-color: white;
+  }
+  /* line 2832, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_1 .font {
+    width: 220px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  /* line 2839, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_1 .font h1 {
+    font-size: 24px;
+  }
+  /* line 2842, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_1 .font p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  /* line 2848, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_2 {
+    position: relative;
+    top: 0px;
+    width: 250px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    background: none;
+    background-color: white;
+  }
+  /* line 2856, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_2 .font {
+    width: 220px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  /* line 2863, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_2 .font h1 {
+    font-size: 24px;
+  }
+  /* line 2866, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_2 .font p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  /* line 2872, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_3 {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 250px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    background: none;
+    background-color: white;
+  }
+  /* line 2881, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_3 .font {
+    width: 220px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  /* line 2888, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_3 .font h1 {
+    font-size: 24px;
+  }
+  /* line 2891, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_3 .font p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  /* line 2897, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_4 {
+    position: relative;
+    top: 0px;
+    width: 250px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    background: none;
+    background-color: white;
+  }
+  /* line 2905, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_4 .font {
+    width: 220px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  /* line 2912, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_4 .font h1 {
+    font-size: 24px;
+  }
+  /* line 2915, ../sass/gary_afriend.scss */
+  .contain_intro .content .content_box .intro_4 .font p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
