@@ -3057,7 +3057,7 @@ footer {
   }
   /* line 2776, ../sass/gary_afriend.scss */
   .lightbox .profile form span {
-    display: inline;
+    display: inline-block;
     width: 50px;
     height: 20px;
   }
