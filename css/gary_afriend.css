@@ -1132,7 +1132,7 @@ footer {
   font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
   font-weight: bold;
   text-align: center;
-  font-size: 18px;
+  font-size: 18pt;
   line-height: 26px;
   letter-spacing: 1px;
 }
@@ -2040,7 +2040,7 @@ footer {
   .lightbox .step_1 .lightbox_s .font {
     width: 700px;
     font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: bold;
     text-align: center;
   }
@@ -2429,7 +2429,7 @@ footer {
     width: 300px;
     margin: 0 auto 10px auto;
     padding-top: 0px;
-    font-family: "Microsoft JhengHei UI", Verdana, geneva, sans-serif, "Heiti TC", "é»‘é«”-ç¹", "å¾®è»Ÿæ­£é»‘é«”", "Microsoft JhengHei", "å¾®è»Ÿé›…é»‘é«”", "Microsoft YaHei", DFKai-SB;
+    font-family: "Apple LiGothic Medium", "微軟正黑體", "Microsoft JhengHei", Arial;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
