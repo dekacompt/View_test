@@ -3022,7 +3022,7 @@ footer {
     width: 310px;
     height: 400px;
     top: calc(50vh - 200px);
-    left: calc(50vw - 150px);
+    left: calc(50vw - 155px);
     text-align: center;
   }
   /* line 2752, ../sass/gary_afriend.scss */
@@ -3050,7 +3050,7 @@ footer {
   /* line 2770, ../sass/gary_afriend.scss */
   .lightbox .profile form .field {
 	display:inline-block;
-    width: 100px;
+    width: 220px;
     height: 25px;
     padding-left: 15px;
     margin: 10px 5px 0 5px;
